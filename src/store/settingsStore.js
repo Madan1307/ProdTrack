@@ -2,7 +2,7 @@ const SETTINGS_KEY = 'prodtrack_settings';
 
 const DEFAULT_SETTINGS = {
   name: '',
-  apiKey: 'AIzaSyBrfHcGuOHarhoWPcmzp4bv2uZZr-Fx6x4',
+  apiKey: '',
   onboardingComplete: false,
   createdAt: null,
 };

@@ -3,7 +3,7 @@ import { getSettings } from '../store/settingsStore';
 async function safeGenerate(prompt) {
   const { apiKey } = getSettings();
   
-  if (!apiKey || apiKey.startsWith('AIzaSy')) {
+  if (!apiKey || apiKey.trim() === '') {
     throw new Error('Please go to ⚙️ Settings and enter a valid Groq API key. You get free Groq keys at console.groq.com');
   }
 
